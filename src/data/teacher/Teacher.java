@@ -3,10 +3,12 @@ package data.teacher;
 public abstract class Teacher {
     private String name;
     private double baseSalary;
+    private String type_teacher;
 
-    public Teacher(String name, double baseSalary) {
+    public Teacher(String name, double baseSalary, String type_teacher) {
         this.name = name;
         this.baseSalary = baseSalary;
+        this.type_teacher = type_teacher;
     }
 
     abstract public double calculateSalary();

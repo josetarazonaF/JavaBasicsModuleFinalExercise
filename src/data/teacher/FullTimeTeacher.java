@@ -1,11 +1,10 @@
 package data.teacher;
 
 public class FullTimeTeacher extends Teacher {
-    public static final String TYPE_TEACHER = "Full Time Teacher";
     private byte xpYears;
 
     public FullTimeTeacher(String name, float baseSalary, byte xpYears) {
-        super(name, baseSalary);
+        super(name, baseSalary, "Full Time Teacher");
         this.xpYears = xpYears;
     }
 

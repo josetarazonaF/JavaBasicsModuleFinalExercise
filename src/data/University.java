@@ -9,16 +9,27 @@ public class University {
     private ArrayList<Student> students;
     private ArrayList<UniversityClass> universityClasses;
 
-    public University() {
+    private String name;
+    private String acronym;
+
+
+    public University(String name, String acronym) {
         this.teachers = new ArrayList<>();
         this.students = new ArrayList<>();
         this.universityClasses = new ArrayList<>();
+
+        this.name = name;
+        this.acronym = acronym;
     }
 
-    public University(ArrayList<Teacher> teachers, ArrayList<Student> students, ArrayList<UniversityClass> universityClasses) {
+    public University(ArrayList<Teacher> teachers, ArrayList<Student> students, ArrayList<UniversityClass> universityClasses,
+                      String name, String acronym) {
         this.teachers = teachers;
         this.students = students;
         this.universityClasses = universityClasses;
+
+        this.name = name;
+        this.acronym = acronym;
     }
 
     public void hireTeacher(Teacher teacher) {
@@ -55,3 +66,4 @@ public class University {
         return universityClasses;
     }
 }
+
