@@ -50,7 +50,6 @@ public class University {
 
             for (Student s : uc.getStudents()) {
                 if (s.getId() == student.getId()) {
-                    System.out.println(uc.getName());
                     results.add(uc);
                 }
             }
