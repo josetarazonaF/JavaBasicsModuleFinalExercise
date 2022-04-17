@@ -47,8 +47,12 @@ public class University {
     public ArrayList<UniversityClass> searchClassesByIncludedStudent(Student student) {
         ArrayList<UniversityClass> results = new ArrayList<>();
         for (UniversityClass uc : this.universityClasses) {
-            if (uc.getStudents().contains(student)) {
-                results.add(uc);
+
+            for (Student s : uc.getStudents()) {
+                if (s.getId() == student.getId()) {
+                    System.out.println(uc.getName());
+                    results.add(uc);
+                }
             }
         }
         return results;
