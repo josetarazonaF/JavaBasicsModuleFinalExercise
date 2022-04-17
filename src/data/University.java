@@ -65,5 +65,13 @@ public class University {
     public ArrayList<UniversityClass> getUniversityClasses() {
         return universityClasses;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAcronym() {
+        return acronym;
+    }
 }
 
