@@ -24,4 +24,8 @@ public abstract class Teacher {
     public void setBaseSalary(float baseSalary) {
         this.baseSalary = baseSalary;
     }
+
+    public String getType_teacher() {
+        return type_teacher;
+    }
 }
