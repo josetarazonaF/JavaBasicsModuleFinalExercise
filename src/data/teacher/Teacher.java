@@ -1,4 +1,4 @@
-package data;
+package data.teacher;
 
 public abstract class Teacher {
     private String name;
@@ -15,11 +15,11 @@ public abstract class Teacher {
         return name;
     }
 
-    public void setBaseSalary(float baseSalary) {
-        this.baseSalary = baseSalary;
-    }
-
     public double getBaseSalary() {
         return baseSalary;
+    }
+
+    public void setBaseSalary(float baseSalary) {
+        this.baseSalary = baseSalary;
     }
 }
